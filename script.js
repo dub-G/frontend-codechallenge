@@ -31,11 +31,15 @@ request.onload = function() {
       item.description = item.description.substring(0, 300)
       p.textContent = `${item.description}...`
 
+      const p2 = document.createElement('p')
+      p2.textContent = `£${item.price}...`
+
       container.appendChild(card)
       card.appendChild(photo)
       card.appendChild(cardtext)
       cardtext.appendChild(h3)
       cardtext.appendChild(p)
+      cardtext.appendChild(p2)
 
       counter = counter + 1
 

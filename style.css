@@ -52,6 +52,7 @@ body {
   width: 200px;
   height: 160px;
   object-fit: cover;
+  margin-right: 30px;
 }
 
 .card {
