@@ -32,6 +32,7 @@ body {
 }
 
 .btn-fill {
+    border : 1px solid #00AEEF;
     background : #00AEEF;
     color      : white;
     padding    : 9px 12px ;
@@ -63,4 +64,18 @@ body {
 
 .hidden {
   display: none;
+}
+
+#load-more-comments {
+  text-align: center;
+  width: 100px;
+  margin  : 50px auto;
+  transition: 0.2s;
+}
+
+#load-more-comments:hover {
+  transform: scale(1.05);
+  border: 1px solid #ef4c00;
+  background: #ef4c00;
+  color: white;
 }

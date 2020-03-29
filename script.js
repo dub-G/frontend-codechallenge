@@ -57,7 +57,6 @@ request.onload = function() {
 
 request.send()
 
-
 const loadMoreBtn =  document.querySelector('#load-more-comments');
 loadMoreBtn.addEventListener('click', function(){
 
@@ -65,7 +64,9 @@ loadMoreBtn.addEventListener('click', function(){
 
   for (i = 0; i < 5; ++i) {
     loadedElements[i].classList.remove("hidden");
+    loadMoreBtn.scrollIntoView({behavior: "smooth"});
   }
+
 });
 
 
